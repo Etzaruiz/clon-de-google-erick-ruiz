@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    padding: 100px;
+    margin: 20px;
+    border: solid crimson;
+    background-color: antiquewhite;
+    /*Eje principal por defecto es ROW, si lo mueven column, es column*/
+    flex-direction: row;
+    /*Funciona para el eje principal column
+    /*column, row-reverse, column-reverse*/
+    justify-content: center;
+    /* Funciona para el eje secundario end, space-around, space-between, space-evenly*/
+    align-items: center;
+    /*Fluyen a la siguiente linea cuando ya no caben*/
+    flex-wrap: wrap;
+    /*permite saltos de linea en automatico y reajusta el contenido de acuerdo a la pantalla*/
+    height: 300px;
+}
+
+.item{
+    padding: 10px;
+    margin: 5px;
+    border: solid black;
+    background-color: pink;
+}
+
+.special-item{
+    order: 2;
+}
+
+.other-special-item{
+    order: 1;
+}
